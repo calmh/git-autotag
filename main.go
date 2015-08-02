@@ -95,7 +95,7 @@ func versionString(prefix string, parts []int) string {
 // versionParts matches a px.y.z version, for non-digit values of p and digits
 // x, y, and z.
 func versionParts(s string) (prefix string, parts []int) {
-	exp := regexp.MustCompile(`^([^\d]+)(\d+)\.(\d+)\.(\d+)$`)
+	exp := regexp.MustCompile(`^([^\d]*)(\d+)\.(\d+)\.(\d+)$`)
 	match := exp.FindStringSubmatch(s)
 	if len(match) > 1 {
 		prefix = match[1]
