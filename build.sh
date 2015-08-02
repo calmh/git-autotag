@@ -20,7 +20,7 @@ for arch in windows-386 windows-amd64 ; do
 	export GOARCH=${arch#*-}
 	rm -rf bin
 	go install -ldflags "$ldflags"
-	zip -qr "mole-$arch.zip" bin
+	zip -qr "git-autotag-$arch.zip" bin
 done
 rm -rf bin
 
