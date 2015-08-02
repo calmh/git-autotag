@@ -22,6 +22,7 @@ v0.11.19
 $ git autotag -l minor
 v0.12.0
 $ git config autotag.sign true
+$ git config user.signingkey release@syncthing.net
 $ git autotag -l patch
 v0.12.1
 
